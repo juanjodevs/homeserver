@@ -1,0 +1,29 @@
+name: nextcloud
+
+services:
+  nextcloud-server:
+    container_name: nextcloud_server
+    image: nextcloud
+    volumes:
+      - /mnt/storage/nextcloud:/var/www/html
+    ports:
+      - 8080:80
+    environment:
+      MYSQL_DATABASE: "nextcloud"
+      MYSQL_USER: "nextcloud"
+      MYSQL_PASSWORD: "nextcloud"
+      MYSQL_HOST: database
+    depends_on:
+      - database
+    restart: always
+  database:
+    container_name: nextcloud_mysql
+    image: mysql
+    volumes:
+      - /mnt/storage/nextcloud_mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "nextcloudrootpassword"
+      MYSQL_DATABASE: "nextcloud"
+      MYSQL_USER: "nextcloud"
+      MYSQL_PASSWORD: "nextcloud"
+    restart: always
