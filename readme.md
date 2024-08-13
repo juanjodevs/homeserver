@@ -1,7 +1,7 @@
 
 # Configuración servidor cloud en casa
 
-Según vimos en los directos de [twitch.tv](twithc.tv/juanjodevs), probamos varias plataformas para almacenar nuestros datos y nos quedamos finalmente con NextCloud para los datos y Immich para las imágenes y vídeos.
+Según vimos en los directos de [twitch.tv](https://twitch.tv/juanjodevs), probamos varias plataformas para almacenar nuestros datos y nos quedamos finalmente con NextCloud para los datos y Immich para las imágenes y vídeos.
 
 A pesar de que la app Memories de NextCloud cumple bien la función de sincronización, Immich me gustó mucho más para almacenar las fotos y vídeos como remplazo de Google Photos / iCloud. Todo funciona perfectamente con la configuración por defecto.
 
@@ -23,7 +23,7 @@ docker-compose up -d
 
 ## Configuración ssh
 
-En la carpeta ssh hay un ejemplo de archivo de configuración para entrar en nuestro servidor sin tener que poner ni el usuario ni la contraseña, una vez hayamos puesto nuestra clave pública como se mostró en el directo de [twitch.tv](twithc.tv/juanjodevs).
+En la carpeta ssh hay un ejemplo de archivo de configuración para entrar en nuestro servidor sin tener que poner ni el usuario ni la contraseña, una vez hayamos puesto nuestra clave pública como se mostró en el directo de [twitch.tv](https://twitch.tv/juanjodevs).
 
 Este archivo debería ir en nuestra carpeta de usuario:
 
